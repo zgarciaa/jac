@@ -15,6 +15,7 @@ return new class extends Migration
             $table->id();
             $table->text('statement');
             $table->string('group')->nullable();
+            $table->boolean('multiple_answers')->default(0);
             $table->timestamps();
             $table->softDeletes();
         });

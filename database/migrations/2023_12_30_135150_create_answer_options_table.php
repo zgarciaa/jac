@@ -16,6 +16,7 @@ return new class extends Migration
             $table->unsignedBigInteger('question_id');
             $table->string('value');
             $table->char('letter', 1);
+            $table->boolean('is_other')->default(0);
             $table->timestamps();
 
             $table->foreign('question_id')->references('id')->on('questions');

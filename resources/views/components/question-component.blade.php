@@ -2,14 +2,36 @@
     <p>{{ $question->id . '. ' . $question->statement }}</p>
     <ul>
         @foreach ($question->answer_options as $option)
-            <label>
-                <input
-                    type="radio"
-                    name="{{ $option->question_id }}"
-                    value="{{ $option->letter }}"
-                >
+            @if($question->multiple_answers === 1)
+                <label>
+                    <input
+                        type="checkbox"
+                        name="answers[{{ $question->id }}][]}"
+                        value="{{ $option->id }}"
+                        multiple
+                    >
+                </label>
                 {{ $option->letter . '. ' . $option->value }}
-            </label><br>
+            @else
+                <label>
+                    <input
+                        type="radio"
+                        name="answers[{{ $question->id }}]"
+                        value="{{ $option->id }}"
+                        required
+                    >
+                </label>
+                {{ $option->letter . '. ' . $option->value }}
+            @endif
+            @if ($option->is_other === 1)
+                <label>
+                    <input
+                        type="text"
+                        placeholder="Especificar"
+                    >
+                </label>
+            @endif
+            <br>
         @endforeach
     </ul>
 </div>

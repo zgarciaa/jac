@@ -16,23 +16,28 @@ class QuestionSeeder extends Seeder
         $questions = [
             [
                 'statement' => '¿Con que tipo de servicio de salud cuenta usted y la familia?',
-                'group' => 'Servicios Sociales'
+                'group' => 'Servicios Sociales',
+                'multiple_answers' => 0
             ],
             [
                 'statement' => '¿Inicialmente a que servicio de salud acude cuando se enferma algún miembro de la familia?',
-                'group' => 'Servicios Sociales'
+                'group' => 'Servicios Sociales',
+                'multiple_answers' => 0
             ],
             [
                 'statement' => '¿Cuáles son las enfermedades más frecuentes al interior de la familia?',
-                'group' => 'Servicios Sociales'
+                'group' => 'Servicios Sociales',
+                'multiple_answers' => 0
             ],
             [
                 'statement' => '¿La vivienda donde reside es?',
-                'group' => 'Servicios Sociales'
+                'group' => 'Servicios Sociales',
+                'multiple_answers' => 0
             ],
             [
                 'statement' => '¿La vivienda esta compuesta por?',
-                'group' => 'Servicios Sociales'
+                'group' => 'Servicios Sociales',
+                'multiple_answers' => 1
             ]
         ];
         DB::table('questions')->insert($questions);

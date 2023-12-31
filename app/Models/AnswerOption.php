@@ -21,6 +21,7 @@ class AnswerOption extends Model
         'question_id',
         'value',
         'letter',
+        'is_other'
     ];
 
     /**

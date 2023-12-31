@@ -17,142 +17,170 @@ class AnswerOptionSeeder extends Seeder
             [
                 'question_id' => 1,
                 'value' => 'SISBEN.',
-                'letter' => 'A'
+                'letter' => 'A',
+                'is_other' => 0
             ],
             [
                 'question_id' => 1,
                 'value' => 'EPS.',
-                'letter' => 'B'
+                'letter' => 'B',
+                'is_other' => 0
             ],
             [
                 'question_id' => 1,
                 'value' => 'Prepagada.',
-                'letter' => 'C'
+                'letter' => 'C',
+                'is_other' => 0
             ],
             [
                 'question_id' => 1,
                 'value' => 'Otra ¿Cuál?',
-                'letter' => 'D'
+                'letter' => 'D',
+                'is_other' => 1
             ],
             [
                 'question_id' => 2,
                 'value' => 'Pariente o Amigo.',
-                'letter' => 'A'
+                'letter' => 'A',
+                'is_other' => 0
             ],
             [
                 'question_id' => 2,
                 'value' => 'Centro de Salud.',
-                'letter' => 'B'
+                'letter' => 'B',
+                'is_other' => 0
             ],
             [
                 'question_id' => 2,
                 'value' => 'Medicina natural.',
-                'letter' => 'C'
+                'letter' => 'C',
+                'is_other' => 0
             ],
             [
                 'question_id' => 2,
                 'value' => 'Médico particular.',
-                'letter' => 'D'
+                'letter' => 'D',
+                'is_other' => 0
             ],
             [
                 'question_id' => 2,
                 'value' => 'Hospital.',
-                'letter' => 'E'
+                'letter' => 'E',
+                'is_other' => 0
             ],
             [
                 'question_id' => 2,
                 'value' => 'EPS.',
-                'letter' => 'F'
+                'letter' => 'F',
+                'is_other' => 0
             ],
             [
                 'question_id' => 2,
                 'value' => 'Ninguno.',
-                'letter' => 'G'
+                'letter' => 'G',
+                'is_other' => 0
             ],
             [
                 'question_id' => 2,
                 'value' => 'Otra ¿Cuál?',
-                'letter' => 'H'
+                'letter' => 'H',
+                'is_other' => 1
             ],
             [
                 'question_id' => 3,
-                'value' => 'Centro de Salud.',
-                'letter' => 'B'
+                'value' => 'Gripa.',
+                'letter' => 'A',
+                'is_other' => 0
             ],
             [
                 'question_id' => 3,
-                'value' => 'Medicina natural.',
-                'letter' => 'C'
+                'value' => 'Diarrea.',
+                'letter' => 'B',
+                'is_other' => 0
             ],
             [
                 'question_id' => 3,
-                'value' => 'Médico particular.',
-                'letter' => 'D'
+                'value' => 'Dengue.',
+                'letter' => 'C',
+                'is_other' => 0
             ],
             [
                 'question_id' => 3,
-                'value' => 'Hospital.',
-                'letter' => 'E'
+                'value' => 'Bronquitis..',
+                'letter' => 'D',
+                'is_other' => 0
             ],
             [
                 'question_id' => 3,
-                'value' => 'EPS.',
-                'letter' => 'F'
+                'value' => 'Amebiasis.',
+                'letter' => 'E',
+                'is_other' => 0
             ],
             [
                 'question_id' => 3,
-                'value' => 'Ninguno.',
-                'letter' => 'G'
+                'value' => 'Migraña.',
+                'letter' => 'F',
+                'is_other' => 0
             ],
             [
                 'question_id' => 3,
                 'value' => 'Otra ¿Cuál?',
-                'letter' => 'H'
+                'letter' => 'G',
+                'is_other' => 1
             ],
             [
                 'question_id' => 4,
                 'value' => 'Propia.',
-                'letter' => 'A'
+                'letter' => 'A',
+                'is_other' => 0
             ],
             [
                 'question_id' => 4,
                 'value' => 'Arrendada.',
-                'letter' => 'B'
+                'letter' => 'B',
+                'is_other' => 0
             ],
             [
                 'question_id' => 4,
                 'value' => 'Otra ¿Cuál?',
-                'letter' => 'C'
+                'letter' => 'C',
+                'is_other' => 1
             ],
             [
                 'question_id' => 5,
                 'value' => 'Cocina.',
-                'letter' => 'A'
+                'letter' => 'A',
+                'is_other' => 0
             ],
             [
                 'question_id' => 5,
                 'value' => 'Comedor.',
-                'letter' => 'B'
+                'letter' => 'B',
+                'is_other' => 0
             ],
             [
                 'question_id' => 5,
                 'value' => 'Sala.',
-                'letter' => 'C'
+                'letter' => 'C',
+                'is_other' => 0
             ],
             [
                 'question_id' => 5,
                 'value' => 'Alcobas.',
-                'letter' => 'D'
+                'letter' => 'D',
+                'is_other' => 0
             ],
             [
                 'question_id' => 5,
                 'value' => 'Baño.',
-                'letter' => 'E'
+                'letter' => 'E',
+                'is_other' => 0
             ],
             [
                 'question_id' => 5,
                 'value' => 'Patio.',
-                'letter' => 'F'
+                'letter' => 'F',
+                'is_other' => 0
             ]
         ];
         DB::table('answer_options')->insert($answerOptions);

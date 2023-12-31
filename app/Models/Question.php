@@ -19,7 +19,8 @@ class Question extends Model
      */
     protected $fillable = [
         'statement',
-        'group'
+        'group',
+        'multiple_answers'
     ];
 
     /**

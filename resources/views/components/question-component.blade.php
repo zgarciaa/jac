@@ -8,7 +8,6 @@
                         type="checkbox"
                         name="answers[{{ $question->id }}][]}"
                         value="{{ $option->id }}"
-                        multiple
                     >
                 </label>
                 {{ $option->letter . '. ' . $option->value }}

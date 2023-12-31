@@ -13,7 +13,16 @@ return new class extends Migration
     {
         Schema::create('answer_options', function (Blueprint $table) {
             $table->id();
+            $table->unsignedBigInteger('question_id');
+            $table->string('value');
+            $table->char('letter', 1);
             $table->timestamps();
+
+            $table->foreign('question_id')->references('id')->on('questions');
+        });
+        Schema::table('answer_options', function (Blueprint $table){
+            $table->timestamp('created_at')->default('CURRENT_TIMESTAMP')->change();
+            $table->timestamp('updated_at')->default('CURRENT_TIMESTAMP')->change();
         });
     }
 

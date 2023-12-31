@@ -13,7 +13,14 @@ return new class extends Migration
     {
         Schema::create('questions', function (Blueprint $table) {
             $table->id();
+            $table->text('statement');
+            $table->string('group')->nullable();
             $table->timestamps();
+            $table->softDeletes();
+        });
+        Schema::table('questions', function (Blueprint $table){
+            $table->timestamp('created_at')->default('CURRENT_TIMESTAMP')->change();
+            $table->timestamp('updated_at')->default('CURRENT_TIMESTAMP')->change();
         });
     }
 

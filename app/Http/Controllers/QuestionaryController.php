@@ -14,4 +14,9 @@ class QuestionaryController extends Controller
         $questions = Question::with('answer_options')->get();
         return view('questionary.questions')->with(compact('questions'));
     }
+
+    public function getAnswers(Request $request): array
+    {
+        return $request->all();
+    }
 }

@@ -30,5 +30,6 @@ Route::middleware('auth')->group(function () {
 });
 
 Route::get('cuestionario', [QuestionaryController::class, 'list']);
+Route::post('cuestionario-respuestas', [QuestionaryController::class, 'getAnswers'])->name('questionary.answers');
 
 require __DIR__.'/auth.php';

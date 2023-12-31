@@ -5,7 +5,7 @@
             <label>
                 <input
                     type="radio"
-                    name="question_{{ $option->question_id }}"
+                    name="{{ $option->question_id }}"
                     value="{{ $option->letter }}"
                 >
                 {{ $option->letter . '. ' . $option->value }}
